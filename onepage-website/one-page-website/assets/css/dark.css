@@ -1,0 +1,392 @@
+/* Dark mode styling */
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.headersection {
+  background-image: url("../image/1.jpg");
+  filter: grayscale(100%);
+}
+
+#topgrey {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#topgrey2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+
+
+/* Mobile view adjustments for the dark mode toggle */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    right: 70px;
+    /* Adjust based on your layout */
+  }
+}
+
+
+
+
+
+
+
+
+/* Countdown Section */
+
+
+.countdownsection > h1 {
+  color: #ffffff;
+}
+
+
+#timer-container, #timer-container span {
+  color: #ffffff;
+}
+
+
+
+
+
+/* Note Section */
+
+#note {
+  background-color: #272621;
+}
+
+.gridforms > div > .money-icon-description,
+.gridprize > div > .prize-icon-description {
+  color: #ffffff;
+}
+
+
+
+
+
+/* Location Section */
+
+#location {
+  background-color: #272621;
+}
+
+
+
+
+
+/* Contact Section */
+
+#contact {
+  background-color: #272621;
+}
+
+
+.contactus {
+  background-color: #272621;
+
+}
+
+
+.contactInfo > p {
+  color: #ffffff;
+}
+
+
+
+.contactform {
+  color: #ffffff;
+}
+
+
+
+
+.inputbox1,
+.inputbox2 {
+  border-color: rgba(157, 149, 142, 0.2);
+}
+
+.inputbox3 {
+  border-color: rgba(157, 149, 142, 0.2);
+}
+
+.inputbox1:hover,
+.inputbox2:hover {
+  border-color: rgba(111, 102, 95, 0.9);
+  transition: border 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  border-bottom: 1.5px solid;
+}
+
+
+
+.inputbox1 > input,
+.inputbox2 > input {
+  background-color: #272621;
+
+}
+
+.inputbox3 > textarea {
+  background-color: #272621;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile View Section */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 20px 50px;
+    justify-content: space-between;
+  }
+
+  .navbar > ul {
+    display: none;
+  }
+
+  .navbar > button {
+    display: none;
+  }
+
+  .navbar > .switchmodebtn {
+    display: flex;
+  }
+
+  .navbar > i {
+    display: flex;
+    color: white;
+    font-size: 30px;
+  }
+
+  .navbar > a > img {
+    width: 60px;
+  }
+
+  p.italic {
+    font-size: 14px;
+  }
+
+  p.solid {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 40px;
+  }
+
+  button {
+    padding: 10px 25px;
+  }
+
+  h1.big {
+    font-size: 35px;
+    margin: -10px 0 0 0;
+  }
+
+  .header-content > a > .fa-computer-mouse {
+    display: none;
+  }
+
+  #intro {
+    margin: 200px auto;
+  }
+
+  .headersection > .bottomimg {
+    display: none;
+  }
+
+
+
+  #location > .bottomimg {
+    display: none;
+  }
+
+
+
+  /* Countdown Section */
+
+
+  .countdownsection > h1 {
+    font-size: 30px;
+  }
+
+
+
+  .countdown {
+    gap: 10px;
+    padding: 30px;
+  }
+
+  .time span {
+    font-size: 50px;
+  }
+
+  .label {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  #countdown > .bottomimg {
+    display: none;
+  }
+
+
+  /* Note Section */
+
+  #note {
+    padding: 30px 30px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-content: center;
+  }
+
+  .gridtitlenote {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .gridtitlenote > p {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+
+
+
+
+  /* Contact Section */
+
+  #contact {
+    padding: 30px 30px;
+    flex-direction: column;
+  }
+
+
+  .contactus {
+    flex-direction: column;
+  }
+
+  .contactInfo {
+    margin-right: 0;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .contactInfo > h4 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .contactInfo > p {
+    font-size: 17px;
+    padding-top: 20px;
+  }
+
+
+
+  .contactform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .firstline {
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+
+  .secondline {
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+
+  .inputbox1,
+  .inputbox2 {
+    padding: 30px 30px 20px 0;
+  }
+
+  .inputbox3 {
+    padding: 30px 30px 30px 0;
+  }
+
+  .inputbox1 {
+    margin-right: 0;
+  }
+
+  .inputbox1 > i,
+  .inputbox2 > i,
+  .inputbox3 > i {
+    margin-right: 15px;
+    font-size: 17px;
+  }
+
+  .inputbox1 > input,
+  .inputbox2 > input {
+    font-size: 15px;
+  }
+
+  .contactus button {
+    width: 200px;
+    padding: 20px 0;
+    font-size: 17px;
+    font-weight: 300px;
+  }
+
+
+
+  /* Footer Section */
+
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .social-media h3 {
+    font-size: 30px;
+  }
+
+  .social-icons a {
+    padding: 20px 22px;
+  }
+
+  .social-icons i {
+    font-size: 20px;
+  }
+
+  .footer-bottom {
+    padding-top: 30px;
+  }
+
+  .footer-bottom p {
+    font-size: 16px;
+  }
+
+
+
+}

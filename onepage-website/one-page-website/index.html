@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePage Website</title>
+    <link rel="icon" href="assets/image/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" id="theme" href="assets/css/light.css">
+   
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css"/>
+</head>
+
+
+<body>
+
+
+
+    <!-- Header section -->
+    
+<section class="headersection">
+        <!-- image carousel -->
+        <div class="owl-carousel">
+            <div class="backgroundimg1"></div>
+        
+            <div class="backgroundimg2"></div>
+
+            <div class="backgroundimg3"></div>
+        </div>
+
+
+                <nav class="navbar">
+            <a href="#"><img src="assets/image/logo.png" alt="Logo Image"></a>
+
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#note">Note</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button><i class="fa fa-phone-volume"></i>Call Us</button>
+
+
+            <button onclick="switchmode()" class="switchmodebtn">
+                <i id="theme-icon" class="fa fa-sun"></i>
+            </button>
+
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+
+<!-- Nav Section -->
+    <div class="con1">
+        
+
+        
+
+
+
+
+        <header id="intro">
+            <div class="header-content">
+                <p class="italic">imomotimi foundation presents</p>
+                <h1 class="big">Imomotimi Ijaw</h1>
+                <h1 class="big">Dance Contest 2024</h1>
+                <button>Download Entry Form<i class="fa fa-download"></i></button>
+                <p class="solid">All duly filled out forms and the entry fees should be brought along to the audition.
+                </p>
+                <a href="#countdown"><i class="fa fa-computer-mouse"></i></a>
+            </div>
+        </header>
+
+        <img src="assets/image/shape-top-white-80.png" alt="" class="bottomimg" id="topwhite" >
+    </div>
+
+</section>
+
+
+    <!-- <section class="headersection">
+        <nav class="navbar">
+            <a href="#"><img src="assets/image/logo.png" alt="Logo Image"></a>
+
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#note">Note</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button><i class="fa fa-phone-volume"></i>Call Us</button>
+
+
+            <button onclick="switchmode()" class="switchmodebtn">
+                <i id="theme-icon" class="fa fa-sun"></i>
+            </button>
+
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+
+
+        <header id="intro">
+            <div class="header-content">
+                <p class="italic">imomotimi foundation presents</p>
+                <h1 class="big">Imomotimi Ijaw</h1>
+                <h1 class="big">Dance Contest 2024</h1>
+                <button>Download Entry Form<i class="fa fa-download"></i></button>
+                <p class="solid">All duly filled out forms and the entry fees should be brought along to the audition.
+                </p>
+                <a href="#countdown"><i class="fa fa-computer-mouse"></i></a>
+            </div>
+        </header>
+
+
+
+        <img src="assets/image/shape-top-white-80.png" alt="" class="bottomimg" id="topwhite">
+
+    </section> -->
+
+
+
+
+
+
+    <!-- Countdown Section -->
+
+    <section id="countdown">
+
+
+        <div class="countdownsection">
+
+            <h1>Countdown to Audition</h1>
+
+            <div class="countdown">
+
+                <ul id="timer-container">
+                    <li id="days" role="timer"><span>0</span>days</li>
+                    <li>:</li>
+                    <li id="hours" role="timer"><span>0</span>hours</li>
+                    <li>:</li>
+                    <li id="minutes" role="timer"><span>0</span>minutes</li>
+                    <li>:</li>
+                    <li id="seconds" role="timer"><span>0</span>seconds</li>
+                </ul>
+
+
+
+
+
+                <!-- <div class="time">
+                    <span class="days">29:</span>
+                    <span class="dash">_</span>
+                    <div class="label">Days</div>
+                </div>
+                <div class="time">
+                    <span class="hours">02:</span>
+                    <span class="dash">_</span>
+                    <div class="label">Hours</div>
+                </div>
+                <div class="time">
+                    <span class="minutes">08:</span>
+                    <span class="dash">_</span>
+                    <div class="label">Minutes</div>
+                </div>
+                <div class="time">
+                    <span class="seconds">06</span>
+                    <span class="dash">_</span>
+                    <div class="label">Seconds</div>
+                </div> -->
+            </div>
+        </div>
+
+
+        <img src="assets/image/shape-top-grey-80.png" alt="" class="bottomimg" id="topgrey">
+
+
+
+    </section>
+
+
+
+    <!-- Note Section -->
+
+    <section id="note">
+
+        <div class="title">
+
+            <div class="gridtitlenote">
+                <p>Important things to note...</p>
+            </div>
+
+
+            <div class="gridforms">
+                <i class="fa fa-money-bill-wave"></i>
+                <div>
+                    <h4 class="money-icon-title">
+                        <span>Forms</span>
+                    </h4>
+                    <span class="money-icon-description">Audition forms are available for ₦1,000 for single contestants,
+                        and ₦1,500 for a group of five.</span>
+                </div>
+            </div>
+
+
+            <div class="gridprize">
+                <i class="fa fa-trophy"></i>
+
+                <div>
+                    <h4 class="prize-icon-title">
+                        <span>Prizes</span>
+                    </h4>
+                    <div class="prize-icon-description"><strong>1st Prize:</strong> ₦2,000,000</div>
+                    <div class="prize-icon-description"><strong>2nd Prize:</strong> ₦1,000,000</div>
+                    <div class="prize-icon-description"><strong>3rd Prize:</strong> ₦500,000</div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- Location Section -->
+
+    <section id="location">
+        <div class="locationbody">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0200747342737!2d144.9574270153847!3d-37.81974194201059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43d96f26e9%3A0x4dd3402e042ab4e6!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1629828751189!5m2!1sen!2sus"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
+
+        <img src="assets/image/shape-top-grey-80.png" alt="" class="bottomimg" id="topgrey2">
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+
+    <section id="contact">
+        <div class="contactus">
+
+            <div class="contactInfo">
+                <h4>For More Information:</h4>
+                <p><strong>Hotlines:</strong> 07035973706 & 08108112759</p>
+                <p><strong>Email:</strong> info@ijawdancecontest.ng</p>
+                <p><strong>Audition Location: </strong> Nitro Studio, Tamara Hall, Otiotio Road, Yenagoa, Bayelsa State.
+                </p>
+            </div>
+
+
+            <div class="contactform">
+
+                <div class="firstline">
+                    <div class="inputbox1">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="inputbox2">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+
+
+                <div class="firstline">
+                    <div class="inputbox1">
+                        <i class="fa fa-phone-volume"></i>
+                        <input type="tel" placeholder="Phone" required>
+                    </div>
+                    <div class="inputbox2">
+                        <i class="fa fa-info-circle"></i>
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="secondline">
+                    <div class="inputbox3">
+                        <i class="fa fa-pen"></i>
+                        <textarea name="message"
+                            placeholder="How can we help you? Feel free to get in touch!"></textarea>
+                    </div>
+                </div>
+
+
+                <button>Get In Touch</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- This is the footer section -->
+    <footer>
+        <div onclick="window.scrollTo({top:0, behavior: 'smooth'})" class="scroll-up-btn" id="scrollUpBtn">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+        <div class="footer-content">
+            <div class="social-media">
+                <h3>We Are Social</h3>
+                <div class="social-icons">
+                    <a href="#"><span class="icon"><i class="fa-brands fa-facebook-f"></i></span></a>
+                    <a href="#"><span class="icon"><i class="fa-brands fa-x-twitter"></i></span></a>
+                    <a href="#"><span class="icon"><i class="fa-brands fa-instagram"></i></span></a>
+                    <a href="#"><span class="icon"><i class="fa-brands fa-youtube"></i></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Imomotimi Foundation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+
+       <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayHoverPause: true,
+          autoplayTimeout: 5000,
+          dots: true,
+          smartSpeed: 450,
+          //   animateOut: "slideOutDown",
+          //   animateIn: "flipInX",
+
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+</body>
+
+</html>
