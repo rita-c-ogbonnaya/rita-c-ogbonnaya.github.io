@@ -1,0 +1,1483 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geistsour";
+  src: url("../fonts/SourGummy-Italic-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+}
+
+/* Navbar Styles */
+header {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar.sticky {
+  background-color: #000000;
+}
+
+.navbar .logo img {
+  width: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 13px;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 100vh;
+  padding-top: 50px;
+  background-color: #000000;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 500px;
+  transition: 0.3s ease;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: "Geist", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  padding: 10px 50px;
+  justify-content: left;
+  background: linear-gradient(to right, #e40f1b 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 1s ease;
+}
+
+.nav-links li a:hover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: white;
+  background-position: left bottom;
+}
+
+.nav-links.active {
+  right: 0;
+}
+
+.social-icon {
+  background-color: #e40f1b;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  color: white;
+  margin-top: 30px;
+}
+
+.social-icon i {
+  font-size: 18px;
+  transition: ease 0.5s;
+}
+
+.social-icon i:hover {
+  scale: 1.5;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 4px;
+  width: 25px;
+  background-color: #e40f1b;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Hero Section */
+
+.owl-carousel {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: relative;
+}
+
+.item img {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: grayscale(100%);
+  background-blend-mode: overlay;
+  overlay: #000000;
+}
+
+.side-text-bar {
+  background-color: white;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: -1;
+  min-width: 650px;
+  min-height: 650px;
+  clip-path: polygon(100% 100%, 100% 150px, 0 100%);
+
+  /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%);
+}
+
+.bg-text {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  padding: 0 2rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  color: #000000;
+  margin-top: 200px;
+}
+
+.bg-text h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0.8em;
+  font-family: "Geistsour";
+}
+
+.bg-text p {
+  font-family: "Geist";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* button {
+  width: 150px;
+  background-color: #e40f1b;
+  border: none;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Geist";
+  transition: ease 1s;
+}
+
+button:hover {
+  color: #e40f1b;
+  background-color: transparent;
+  border: 2px solid #e40f1b;
+} */
+
+.cube {
+  color: #ccc;
+  cursor: pointer;
+  font-family: "Geist";
+  transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  width: 10em;
+  height: 4em;
+}
+
+.cube:hover {
+  transform: rotateX(-90deg);
+}
+
+.cube a,
+.cubeside a {
+  text-decoration: none;
+}
+
+.side {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 3em;
+  width: 10em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1em;
+  font-weight: 500;
+}
+
+.top {
+  background: #e40f1b;
+  color: #ffffff;
+  transform: rotateX(90deg) translate3d(0, 0, 2em);
+  box-shadow: inset 0 0 0 2px #e40f1b;
+  border-radius: 5px;
+}
+
+.front {
+  background: #ffffff;
+  color: #e40f1b;
+  box-shadow: inset 0 0 0 2px #e40f1b;
+  border-radius: 5px;
+  transform: translate3d(0, 0, 2em);
+}
+/* Keyframe Animation */
+@keyframes slide {
+  0%,
+  25% {
+    transform: translateX(0%);
+  }
+  26%,
+  50% {
+    transform: translateX(-100%);
+  }
+  51%,
+  75% {
+    transform: translateX(-200%);
+  }
+  76%,
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+/* Main Section */
+main {
+  margin-top: 150px;
+  z-index: 100;
+  justify-content: center;
+}
+
+#welcome {
+  margin: 100px 0;
+}
+
+.body-title {
+  font-family: "Geistsour";
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.body-title p {
+  margin-top: -10px;
+}
+
+.activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+.volunteer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  min-width: 200px;
+  transition: ease-in-out 0.5s;
+}
+
+.volunteer:hover {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.volunteer img {
+  width: 50%;
+  margin-bottom: 20px;
+  transition: ease 0.5s;
+}
+
+.volunteer img:hover {
+  width: 45%;
+}
+
+.volunteer p {
+  font-family: "Geist";
+  font-size: 16px;
+}
+
+.volunteer h6 {
+  font-family: "geist";
+  font-size: 18px;
+}
+
+/* About Us */
+
+#ourstory {
+  margin-top: 150px;
+  background-color: #fbf3f3;
+  padding: 100px 30px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.imgabout {
+  width: 50%;
+  padding: 0 12px;
+}
+
+.imgabout img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.infoabout {
+  width: 50%;
+  padding: 0 12px;
+}
+
+.topabout {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.topabout h2 {
+  font-size: 3rem;
+  font-family: "Geistsour";
+}
+
+.topabout h4 {
+  font-family: "Geist";
+  font-weight: 500;
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.topabout p {
+  font-size: 16px;
+  font-family: "Geist";
+}
+
+.bottomabout {
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 12px;
+  gap: 20px;
+}
+
+.mission,
+.numbers {
+  display: flex;
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mission h4 {
+  font-size: 30px;
+  font-family: "Geistsour";
+}
+
+.mission p {
+  font-size: 16px;
+  font-family: "Geist";
+  margin: 10px 0;
+}
+
+.mission fa-square-check {
+  font-size: 16px;
+}
+
+.mission text {
+  font-size: 16px;
+  font-family: "Geist";
+  margin: 10px 0;
+}
+
+.mission text1 {
+  font-size: 16px;
+  font-family: "Geist";
+}
+
+.first h1 {
+  font-size: 60px;
+  font-family: "Geist";
+}
+
+.first p {
+  font-family: "Geist";
+  font-size: 18px;
+}
+
+/* Our Causes */
+
+#ourcause {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.causebgtext {
+  text-align: center;
+  margin: 50px 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.causebgtext h1 {
+  font-family: "Geistsour";
+  font-size: 50px;
+}
+
+.causebgtext p {
+  font-size: 18px;
+  font-family: "Geist";
+}
+
+.causecard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 150px;
+  gap: 20px;
+}
+
+/* From Uiverse.io by Kemboi-Dun */
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  color: #000000;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.cause-img img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card_title {
+  font-family: "Geistsour";
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.card_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0 0 0;
+  background: #ffffff;
+  border-top-left-radius: 20px;
+  transform: translateY(230px);
+  transition: transform 0.25s;
+}
+
+.card_content::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #ffffff;
+}
+
+.card_title {
+  color: #131313;
+  line-height: 15px;
+}
+
+.card_description {
+  font-size: 14px;
+  padding: 20px 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card:hover .card_content {
+  transform: translateY(0);
+}
+
+.card:hover .card_description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.card_cta {
+  width: 100%;
+  background-color: #e40f1b;
+  border: 2px solid transparent;
+  color: #ffffff;
+  border-radius: 0;
+  font-family: "Geistsour";
+  font-size: 20px;
+  line-height: normal;
+  padding: 15px 25px;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+/* .card_cta i {
+  margin-left: 100px;
+} */
+
+.cardamt {
+  padding: 0 20px 20px 20px;
+}
+
+/* Founder Section */
+
+.founderdetails {
+  display: flex;
+  padding: 100px 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.founderimg img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.aboutfounder {
+  width: 400px;
+}
+
+.abtheader,
+.abttext,
+.abtsocial {
+  margin-bottom: 30px;
+}
+
+.abtheader h4 {
+  font-size: 46px;
+  font-family: "Geistsour";
+}
+
+.abtheader p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Geist";
+}
+
+.abttext p {
+  font-size: 18px;
+  font-family: "Geist";
+  margin-bottom: 15px;
+}
+
+.abtsocial {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+}
+
+.abtsocial i {
+  font-size: 24px;
+  color: #e40f1b;
+  transition: ease 0.5s;
+}
+
+.abtsocial i:hover {
+  scale: 1.2;
+  border-radius: 50%;
+  border: 1.5px solid #e40f1b;
+  padding: 5px;
+}
+
+/* Join Us */
+#joinus {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 100px;
+  background-color: #fbf3f3;
+}
+
+#joinus::after {
+  content: "";
+  border: 20px solid #e40f1b;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -130px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+
+#joinus::before {
+  content: "";
+  background-color: #e40f1b;
+  border-radius: 50%;
+  position: absolute;
+  top: -130px;
+  left: -30;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.joinus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.joinustext {
+  width: 60%;
+}
+
+.joinustext h1 {
+  font-size: 60px;
+  font-family: "Geistsour";
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.joinusbtn {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.front1 {
+  background: #fbf3f3;
+  color: #e40f1b;
+  box-shadow: inset 0 0 0 2px #e40f1b;
+  border-radius: 5px;
+  transform: translate3d(0, 0, 2em);
+}
+
+.cubeside {
+  color: #ccc;
+  cursor: pointer;
+  font-family: "Geist";
+  transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  width: 10em;
+  height: 4em;
+}
+
+.cubeside:hover {
+  transform: rotateX(-90deg);
+}
+
+.sides {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 3em;
+  width: 10em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1em;
+  font-weight: 500;
+}
+
+.tops {
+  background: #e40f1b;
+  color: #ffffff;
+  transform: rotateX(90deg) translate3d(0, 0, 2em);
+  box-shadow: inset 0 0 0 2px #e40f1b;
+  border-radius: 5px;
+}
+
+.fronts {
+  background: #fbf3f3;
+  color: #e40f1b;
+  box-shadow: inset 0 0 0 2px #e40f1b;
+  border-radius: 5px;
+  transform: translate3d(0, 0, 2em);
+}
+
+/* Volunteer */
+#volunteer {
+  padding: 100px 100px;
+  background-color: #fbf3f3;
+  position: relative;
+  overflow: hidden;
+}
+
+#volunteer::after {
+  content: "";
+  background-color: #e40f1b;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -200px;
+  right: -80px;
+  margin: auto;
+  width: 350px;
+  height: 350px;
+}
+
+.volunteerws {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 100px;
+}
+
+.volunteerheader {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.volunteercard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.volunteerheader h1 {
+  font-size: 50px;
+  font-family: "Geistsour";
+  margin-bottom: 20px;
+}
+
+.volunteerform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.volunteerform h1 {
+  font-size: 30px;
+  font-family: "Geist";
+  line-height: 30px;
+  text-align: left;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.volunteerinput {
+  display: flex;
+  gap: 20px;
+}
+
+.volunteerinput input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fbf3f3;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+.volunteerinput #input1 {
+  display: none;
+}
+
+.volunteerinput label {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fbf3f3;
+  font-family: "Geist";
+  font-size: 13px;
+  color: #767575;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+.comment {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fbf3f3;
+  font-family: "Geist";
+  font-size: 13px;
+  color: #767575;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+.volunteerinput textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fbf3f3;
+  font-family: "Geist";
+  font-size: 13px;
+  color: #767575;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+.volunteerimg {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.volunteerimg img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+.volunteercontent {
+  padding: 30px;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: "Geist";
+}
+
+.volunteercontent h2 {
+  font-size: 30px;
+  margin: 1rem 0;
+  font-family: "Geistsour";
+}
+
+/* Gallery */
+
+#gallery {
+  width: 100vw;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.galleryheader h1 {
+  font-size: 50px;
+  font-family: "Geistsour";
+  margin-bottom: 20px;
+}
+
+.causeimg {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.imgcon {
+  width: 25%;
+  display: block;
+  transition: ease 0.5s;
+  margin-right: 5px;
+  filter: grayscale();
+  height: 100vh;
+}
+
+.causeimg img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+  transition: ease 0.5s;
+}
+
+.imgcon:hover {
+  width: 50%;
+  filter: none;
+}
+
+/* Let's Talk */
+#letstalk {
+  width: 100vw;
+  padding: 0 100px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.contactinfo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  justify-content: left;
+}
+
+.contactimg {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.contactimg img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: ease 0.5s;
+}
+
+.cinfo {
+  gap: 5px;
+  font-family: "Geist";
+  font-size: 18px;
+}
+
+.contacttitle {
+  font-size: 30px;
+  font-family: "Geist";
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #e40f1b;
+}
+
+.cinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactadd h4 {
+  font-family: "Geist";
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #e40f1b;
+}
+
+.contactadd {
+  margin-bottom: 20px;
+}
+
+.contactaddress,
+.contactnum,
+.contactmail {
+  display: flex;
+  margin-bottom: 20px;
+  font-family: "Geist";
+  font-size: 16px;
+  gap: 10px;
+}
+
+.contactform {
+  width: 60%;
+}
+
+.contactform {
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.contactformh1 h1,
+.contactformh1 p {
+  font-family: "Geist";
+  text-align: left;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.contactformh1 h1 {
+  font-size: 50px;
+  color: #e40f1b;
+}
+
+.donateimage img {
+  width: 100vw;
+}
+
+/* Footer Section */
+
+#footer {
+  background-color: #b9565b;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.footercard {
+  width: 100vw;
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footerimg {
+  width: 30%;
+}
+
+.footerimg img {
+  width: 200px;
+}
+
+.footercontent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  font-family: "Geist";
+  font-size: 16px;
+}
+
+.footermenu {
+  width: 30%;
+  color: #ffffff;
+  font-family: "Geist";
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.footerm {
+  display: flex;
+}
+
+.footermenu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footermenu ul {
+  list-style: none;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.copyright {
+  background-color: #000000;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: #ffffff;
+  align-items: center;
+  font-family: "Geist";
+  font-size: 16px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  * {
+    overflow: hidden;
+  }
+  .navbar .logo img {
+    width: 100px;
+  }
+
+  .navbar {
+    padding: 25px !important;
+    overflow: hidden;
+    width: 100vw;
+  }
+  .nav-links {
+    width: 300px;
+  }
+
+  .bg-text {
+    padding: 0 3rem;
+  }
+
+  .bg-text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 0.9em;
+  }
+
+  nav .animation {
+    display: none;
+  }
+
+  .body-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .social-icon {
+    gap: 20px;
+  }
+
+  .bg-text {
+    padding: 0 1rem;
+  }
+  .side-text-bar {
+    clip-path: polygon(100% 100%, 100% 350px, 0 100%);
+
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+  }
+
+  .mainsection {
+    padding: 0 10px;
+  }
+
+  .activity {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    gap: 80px;
+  }
+
+  .activity1,
+  .activity2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .volunteer {
+    min-height: 50%;
+    min-width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .volunteer img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  /* About Section */
+  #ourstory {
+    margin-top: 150px;
+    background-color: #fef2f2;
+    padding: 100px 10px;
+  }
+
+  .mission,
+  .topabout {
+    padding: 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .infoabout {
+    width: 100%;
+  }
+
+  .imgabout {
+    width: 100%;
+  }
+
+  .imgabout img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  /* Founder Section */
+
+  #founder,
+  #welcome,
+  #ourstory,
+  #joinus,
+  #ourcause,
+  #volunteer,
+  #contact {
+    width: 100vw !important;
+  }
+
+  .founderdetails {
+    flex-direction: column;
+    gap: 0;
+    padding: 100px 30px;
+  }
+
+  .abtheader h4 {
+    font-size: 35px;
+  }
+
+  .aboutfounder p {
+    font-size: 16px;
+  }
+
+  .founderimg img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .aboutfounder {
+    padding: 20px;
+  }
+
+  /*  Become a Volunteer  */
+
+  #joinus {
+    padding: 50px 10px;
+  }
+
+  .joinus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+    color: #000000;
+    font-family: "Geist";
+  }
+
+  .joinusbtn {
+    display: flex;
+    width: 100%;
+  }
+
+  .joinustext h1 {
+    font-size: 55px;
+    overflow: hidden;
+  }
+
+  /* Our Cause */
+
+  .causecard {
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  /* Volunteering Secton */
+
+  #volunteer {
+    padding: 100px 20px;
+  }
+
+  .volunteerws {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .volunteerheader {
+    width: 100%;
+  }
+
+  .volunteerform h1 {
+    font-size: 24px !important;
+  }
+
+  .volunteerform {
+    padding: 20px;
+  }
+
+  .volunteercard {
+    width: 100%;
+  }
+
+  #volunteer::after {
+    bottom: -300px;
+    background-color: transparent;
+    border: 20px solid #e40f1b;
+  }
+
+  .volunteerimg {
+    overflow: hidden;
+  }
+
+  /* Gallery */
+
+  #gallery {
+    display: none;
+  }
+
+  /* Contact Section */
+
+  #letstalk {
+    padding: 100px 20px;
+    flex-direction: column;
+  }
+
+  .contactinfo {
+    /* align-items: center; */
+    padding: 20px;
+  }
+
+  .contactinfo {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .volunteerform {
+    width: 100%;
+  }
+
+  .contactform {
+    width: 100%;
+  }
+
+  .contacttitle h1,
+  .contactformh1 h1 {
+    font-size: 30px;
+    overflow: hidden;
+  }
+
+  .contactadd h4 {
+    margin-bottom: 20px;
+  }
+
+  .contactaddress,
+  .contactnum,
+  .contactmail {
+    margin-bottom: 10px;
+  }
+
+  /* Foooter Section */
+
+  #footer {
+    margin-top: 0;
+  }
+
+  .footercard {
+    padding: 20px 20px 50px 20px;
+    flex-direction: column;
+  }
+
+  .footerimg img {
+    width: 150px;
+  }
+
+  .footerimg {
+    width: 100%;
+  }
+
+  .footercontent {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footermenu {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .footerm {
+    flex-direction: column;
+  }
+
+  .footerm ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .copyright p {
+    font-size: 14px;
+  }
+}

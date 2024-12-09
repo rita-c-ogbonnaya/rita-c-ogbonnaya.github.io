@@ -1,0 +1,261 @@
+.owl-carousel {
+  width: 100vw;
+  height: 220vh !important;
+  z-index: -1;
+  position: relative;
+}
+
+.item img {
+  height: 220vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: grayscale(100%);
+  background-blend-mode: overlay;
+  overlay: #000000;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 220vh;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%);
+}
+
+.donateform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+    padding: 50px;
+    border-radius: 20px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title h1{
+    font-family: "Geistsour";
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.title h4 {
+font-family: "Geist";
+font-size: 20px;
+font-weight: 400;
+margin-bottom: 12px;
+}
+
+.selectionbtn {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectionbtn button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background-color: #fbf3f3;
+    color: #000000;
+    font-family: "Geist";
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.selectionbtn button:active {
+    background-color: #e40f1b;
+    color: #ffffff;
+}
+
+.selectionbtn .active {
+    background-color: #e40f1b;
+    color: #ffffff;
+}
+
+.amtselect h4{
+    margin: 8px 0 12px 0;
+    font-size: 20px;
+    font-family: "Geist";
+    font-weight: 400;
+}
+
+.amtselect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.amt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.amtset {
+    background-color: #fbf3f3;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-family: "Geist";
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.amtset:active {
+    background-color: #fbf3f3;
+    color: #000000;
+}
+
+.amt .btn2 {
+    width: 25%;
+}
+
+.amt .btn3 {
+    width: 50%;
+    padding:  0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.amt .btn3 span {
+    margin-right: 10px;
+    background-color: #e40f1b;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 5px 0 0 5px;
+}
+
+.doninfo h4 {
+    margin: 4px 0 8px 0;
+    font-size: 20px;
+    font-family: "Geist";
+    font-weight: 400;
+}
+
+.doninfo input {
+    background-color: #fbf3f3;
+    padding: 13px 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-family: "Geist";
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.doninfo input::placeholder {
+    color: #a2a1a1;
+    font-family: "Geist";
+    font-size: 14px;
+}
+
+.doninfo textarea {
+    background-color: #fbf3f3;
+    padding: 13px 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-family: "Geist";
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.doninfo textarea ::selection {
+    background-color: #e40f1b;
+    color: #ffffff;
+}
+
+.paymentmethod h4 {
+    margin: 20px 0 8px 0;
+    font-size: 20px;
+    font-family: "Geist";
+    font-weight: 400;
+}
+
+.paymentmethod {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: ease 0.5s;
+} 
+
+.debit, .paypal, .bitcoin {
+    font-size: 14px;
+    font-family: "Geist";
+    font-weight: 400;
+    margin: 0 0 4px 0;
+}
+
+.debit .fa-regular, .paypal .fa-brands, .bitcoin .fa-brands {
+    margin: 0 5px 0 0;
+    color: #e40f1b;
+}
+
+.card_cta {
+    border-radius: 10px;
+}
+
+#footer {
+  background-color: #b9565b;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+   .donateform {
+    width: 90%;
+    padding: 20px 20px;
+    top: 70%;
+}
+
+.owl-carousel {
+  height: 130vh !important;
+}
+
+.item img {
+  height: 130vh;
+}
+
+.overlay {
+  height: 130vh;
+}
+}
+
+
+
+
+
