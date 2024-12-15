@@ -1,11 +1,896 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>D Code God</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1>Hello World</h1>
+
+  <body class="index-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="profile-img">
+        <img
+          src="assets/img/my-profile-img.jpg"
+          alt=""
+          class="img-fluid rounded-circle"
+        />
+      </div>
+
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center justify-content-center"
+      >
+        <img src="assets/img/logo.png" alt="" />
+        <h1 class="sitename">Rita C. Ogbonnaya</h1>
+      </a>
+
+      <div class="social-links text-center">
+        <a href="https://x.com/rita_c_o" class="twitter" target="_blank"
+          ><i class="bi bi-twitter-x"></i
+        ></a>
+        <a href="https://web.facebook.com/rita.c.ogbonnaya" class="facebook" target="_blank"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/rita.c.ogbonnaya/" class="instagram" target="_blank"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://github.com/rita-c-o" class="google-plus" target="_blank"
+          ><i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ritaco/" class="linkedin" target="_blank"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+          </li>
+          <li>
+            <a href="#cert"
+              ><i class="bi bi-file-earmark-text navicon"></i> Certificates</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="bi bi-images navicon"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="" />
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2>Rita C. Ogbonnaya</h2>
+          <p>
+            I'm
+            <span
+              class="typed"
+              data-typed-items="Software Engineer, Creative Designer, Freelancer, "
+            ></span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span>
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="protfolioabt row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img
+                src="assets/img/my-profile-img.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-8 content">
+              <h2>A Little About Me.</h2>
+              <p class="py-3">
+                I am a determined software developer who loves solving problems
+                with code. I have experience in building software, working with
+                data, and designing graphics. I know how to use several
+                programming languages and can quickly learn new ones if needed.
+                I’ve built and managed different projects from start to finish,
+                ensuring they run smoothly even after they’re live. I’m
+                passionate about creating software that makes it easier for
+                people and businesses to manage their tasks and goals.
+              </p>
+
+              <p>
+                My diverse experience and leadership in software development
+                enable me to contribute significantly to the success and growth
+                of any project. For detailed examples of my work, kindly explore
+                my portfolio below.
+              </p>
+
+              <div class="contactdetails">
+                <ul>
+                  <li>
+                    <i class="bi bi-envelope-fill"></i>
+                    <strong>rytha7273@gmail.com</strong>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-telephone-fill"></i>
+                    <strong>+234 (0) 9060405109</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>HTML</span> <i class="val">100%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Tailwind CSS</span> <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>BOOTSTRAP</span> <i class="val">90%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Typescript</span> <i class="val">90%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <!-- End Skills Item -->
+              <div class="progress">
+                <span class="skill"
+                  ><span>JavaScript</span> <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill"
+                  ><span>React</span> <i class="val">90%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Next.Js</span> <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Phyton</span> <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>WordPress/CMS</span> <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"
+                  ><span>Git</span> <i class="val">95%</i></span
+                >
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <!-- End Skills Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Stats Section -->
+      <section id="cert" class="cert">
+        <div class="certificate-sec">
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Certificates.</h2>
+          </div>
+          <div class="certificate">
+            <div>
+              <div class="cert-item">
+                <img src="assets/img/certificate/images.jpeg" alt="" />
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div>
+              <div class="cert-item">
+                <img src="assets/img/certificate/images.jpeg" alt="" />
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div>
+              <div class="cert-item">
+                <img src="assets/img/certificate/images.jpeg" alt="" />
+              </div>
+            </div>
+            <!-- End Stats Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Stats Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>My Portfolio</h2>
+          <p>Few out of many Projects I am allowed to publicize.</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-product">Website</li>
+              <li data-filter=".filter-branding">Landing Page</li>
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+
+            <!-- App1 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/app-1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>App 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a
+                      href="assets/img/portfolio/app-1.jpg"
+                      title="App 1"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End App1 -->
+
+
+
+              <!-- Renewed Plus Website -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/renewedplus/img1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>RenewedPlus</h4>
+                    <p>Care Home for Children and Young Adult.</p>
+                    <a
+                      href="assets/img/renewedplus/img1.png"
+                      title="RenewedPlus Website"
+                      data-gallery="renewedplus-website"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="renewedplus.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Renewed Plus Website -->
+
+
+
+              <!-- Echos of Hope Website -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/echosofhope/img1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Echos of Hope</h4>
+                    <p>Charity Organization</p>
+                    <a
+                      href="assets/img/echosofhope/img1.png"
+                      title="Echos of Hope"
+                      data-gallery="echosofhope-website"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="echosofhope.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Echos of Hope -->
+
+
+              <!-- App 2 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/app-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>App 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a
+                      href="assets/img/portfolio/app-2.jpg"
+                      title="App 2"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End App2 -->
+
+
+
+              <!-- Healthy Baked Website -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/healthybaked/img1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>HealthyBaked</h4>
+                    <p>
+                      E-commerce Website for Healthy Baked where customers can
+                      place an order
+                    </p>
+                    <a
+                      href="assets/img/healthybaked/img1.png"
+                      title="healthybaked website"
+                      data-gallery="healthybaked-website"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="healthybaked.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Healthy Baked Website -->
+
+
+
+              <!-- Florissante Healthcare -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/florissante/img1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Florissante Healthcare</h4>
+                    <p>Healthcare Website</p>
+                    <a
+                      href="assets/img/florissante/img1.png"
+                      title="Florissante Healthcare"
+                      data-gallery="florissante-website"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="florissante.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Florissante Healthcare -->
+
+
+              <!-- App 3 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/app-3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>App 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a
+                      href="assets/img/portfolio/app-3.jpg"
+                      title="App 3"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End App 3 -->
+
+
+              <!-- Imomotimi Dance Contest -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/imomotimi/img1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Imomotimi Dance Contest</h4>
+                    <p>Dance contest countdown landing page</p>
+                    <a
+                      href="assets/img/imomotimi/img1.png"
+                      title="Imomotimi Dance Contest"
+                      data-gallery="imomotimi-website"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="imomotimi.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Imomotimi Dance Contest -->
+
+              <!-- Joshua's Army -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/joshuasarmy/img1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Joshua's Army</h4>
+                    <p>
+                      A Christain Organization that is focused on grooming the
+                      Male child
+                    </p>
+                    <a
+                      href="assets/img/joshuasarmy/img1.png"
+                      title="Joshua's Army"
+                      data-gallery="joshuasarmy-website"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="joshuasarmy.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Joshua's Army -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Let's Talk</h2>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-wrap">
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>+234 (0) 9060405109</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>ryhta7273@gmail.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 270px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form
+                action="forms/contact.php"
+                method="post"
+                class="php-email-form"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-field"
+                      class="form-control"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email-field"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject-field"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="10"
+                      id="message-field"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>2024 Copyright</span>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
